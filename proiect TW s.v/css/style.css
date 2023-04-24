@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+body {
+	background: #f1fbff;
+}
+.section-padding {
+	padding: 100px 0;
+}
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+}
+.carousel-caption {
+	bottom: 220px;
+	z-index: 2;
+}
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+}
+.carousel-inner:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 1;
+}
+.container-parallax{
+	padding-top:120px;
+	padding-bottom: 10;
+	
+}
+.parallax {
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+  }
+  .container-text-parallax button{
+	background-color: rgba(255, 255, 255, 0.5); /* Set background color to white with 50% opacity */
+	border: none; /* Remove border for a clean look */
+	padding: 10px 20px; /* Add padding for button content */
+	color: #000; /* Set text color to black */
+	border:2px solid black;
+	padding:10px 60px 10px 60px;
+	border-radius: 5px;
+	font-weight: 700;
+	
+  }
+  .container-text-parallax button:hover{
+	animation-name: color-change; 
+	animation-duration: 2s; 
+	animation-timing-function: ease-in-out; 
+	animation-iteration-count: infinite; 
+
+  }
+  @keyframes color-change {
+	0% {
+	  background-color: #ff0000; /* Initial background color at 0% of the animation */
+	}
+	50% {
+	  background-color: #00ff00; /* Changed background color at 50% of the animation */
+	}
+	100% {
+	  background-color: #0000ff; /* Final background color at 100% of the animation */
+	}
+  }
+  
+  .text-parallax{
+	text-align: center;
+	/* max-width: 500px; */
+	width:100%;
+	display: block;
+	margin-top:-80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .text-parallax h2{
+	font-weight: bold;
+	font-size: 40px;
+  }
+  .text-parallax span{
+	color:rgb(92, 92, 241);
+	font-weight: bold;
+  }
+  .text-parallax p {
+	max-width: 55%;
+  }
+  .container-text-parallax{
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content: center;
+	margin-left:10px;
+  }
+
+  .parallax div{
+		/*enable 3D rendering*/
+		transform: translateZ(0);
+		will-change: transform;
+		
+  }
+  .layer {
+	position: absolute;
+	width: 100%;
+	height: 850px;
+	top: 0;
+	left: 0;
+	background-repeat: no-repeat;
+	
+  }
+
+  
+  
+  .source-layer1 {
+	background-image: url('/img/Group 158.png');
+	background-position: 0% 80%;
+	display:inline-block;
+  }
+  
+  .source-layer2 {
+	background-image: url('/img/Group 159.png');
+	background-position: 0% 70%;
+	display:inline-block;
+	z-index: 4;
+  }
+  
+  .source-layer3 {
+	background-image: url('/img/Group 160.png');
+	background-position: 100% 80%;
+	display:inline-block;
+	z-index: 4;
+	
+	
+  }
+  
+
+  
+  .source-layer4 {
+	background-image: url('/img/Group 161.png');
+	background-position: right;
+	display:inline-block;
+	
+  }
+  
+  .source-layer5 {
+	background-image: url('/img/Vector-1.png');
+	background-position: top center;
+	background-position: 0% 90%;
+	z-index: 5;
+	display:inline-block;
+  }
+  
+  .source-layer6 {
+	background-image: url('/img/Vector-1.png');
+	background-position: 0% 90%;
+	z-index: 5;
+  }
+  .source-layer7 {
+	background-image: url('/img/Group\ 222.png');
+	  background-position:80%  70%;
+	z-index: 2;
+  }
+
+  .btn-warning {
+    color: #000;
+    background-color: #fff;
+    border-color: #000;
+	border-width: 2px;
+	font-weight: bold;
+}
+.footer{
+	background-color: #302c2c;
+	
+}
+  .text-box{
+	height: 600px;
+	padding: 50px;
+	z-index: 15;
+}
+.fixed-top {
+    position: unset;
+}
+.lorem-ipsum{
+	text-align: center;
+	color: white;
+	background-color: rgb(22, 11, 80);
+}
+.navbar .getstarted {
+	background: #106eea;
+	margin-left: 30px;
+	border-radius: 4px;
+	font-weight: 400;
+	color: #fff;
+	text-decoration: none;
+	padding: .5rem 1rem;
+	line-height: 2.3;
+}
+.navbar-nav a {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.navbar-light .navbar-brand {
+	color: #000;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+	color: #000;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #000;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: #000;
+}
+.w-100 {
+	height: 100vh;
+}
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background: #fff;
+}
+.portfolio .card {
+	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+.team .card {
+	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+.services .card-body i {
+	font-size: 50px;
+}
+.team .card-body i {
+	font-size: 20px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.carousel-caption {
+		bottom: 370px;
+	}
+	.carousel-caption p {
+		width: 100%;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+	.img-area img {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.navbar-nav {
+		text-align: center;
+	}
+	.carousel-caption {
+		bottom: 125px;
+	}
+	.carousel-caption h5 {
+		font-size: 17px;
+	}
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+	.carousel-caption p {
+		width: 100%;
+		line-height: 1.6;
+		font-size: 12px;
+	}
+	.about-text {
+		padding-top: 50px;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+
+	
+	}
+}
+
